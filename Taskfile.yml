@@ -1,0 +1,11 @@
+version: '3'
+
+tasks:
+  serve:
+    desc: Serve the site locally
+    cmds:
+      - python3 -m http.server 8791
+  test:
+    desc: Sanity check the page
+    cmds:
+      - grep -q "<title>To The White Sea</title>" index.html
