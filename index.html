@@ -56,9 +56,6 @@
   nav{display:flex;gap:22px;align-items:center}
   nav a{text-decoration:none;font-weight:500;padding:6px 0;border-bottom:2px solid transparent}
   nav a:hover{border-bottom-color:var(--sky)}
-  .cart{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--line);border-radius:999px;padding:6px 14px}
-  .cart svg{width:18px;height:18px}
-  @media (max-width:560px){nav a:not(.cart){display:none}}
 
   /* ---------- hero ---------- */
   .hero{background:var(--sky);border-bottom:2px solid var(--line);position:relative;overflow:clip}
@@ -136,10 +133,6 @@
     <nav aria-label="Main">
       <a href="#shop">Shop</a>
       <a href="#listen">Listen</a>
-      <a class="cart" href="https://tothewhitesea.myshopify.com/cart">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
-        Cart
-      </a>
     </nav>
   </div>
 </header>
@@ -156,10 +149,7 @@
         </div>
       </div>
       <figure class="art" style="margin:0">
-        <img src="https://tothewhitesea.myshopify.com/cdn/shop/files/ConvertOut-Resized-TTWS_artwork.jpg?v=1790138524&width=1200"
-             srcset="https://tothewhitesea.myshopify.com/cdn/shop/files/ConvertOut-Resized-TTWS_artwork.jpg?v=1790138524&width=832 832w,
-                     https://tothewhitesea.myshopify.com/cdn/shop/files/ConvertOut-Resized-TTWS_artwork.jpg?v=1790138524&width=1200 1200w"
-             sizes="(min-width:800px) 45vw, 90vw" width="1071" height="1080" fetchpriority="high"
+        <img src="img/artwork.jpg" width="1071" height="1080" fetchpriority="high"
              alt="Hand-drawn show artwork: a man in a green flight suit floats above mint mountains under a pink sky streaked with yellow clouds.">
       </figure>
     </div>
@@ -176,19 +166,19 @@
       <h2 class="display">Support us in style</h2>
       <article class="product">
         <div class="photos">
-          <img src="https://cdn.shopify.com/s/files/1/0784/8375/1078/files/TTWShatfront.heic?v=1790137707&width=900" width="900" height="900" loading="lazy"
+          <img src="img/hat-front.jpg" width="900" height="900" loading="lazy"
                alt="Mint dad hat with 'To The White Sea' embroidered in salmon, front view">
-          <img src="https://cdn.shopify.com/s/files/1/0784/8375/1078/files/TTWShatside.heic?v=1790137707&width=500" width="500" height="500" loading="lazy"
+          <img src="img/hat-side.jpg" width="500" height="500" loading="lazy"
                alt="Side view of the hat">
         </div>
         <div class="info">
           <h3>'To The White Sea' hat</h3>
           <p class="price">$40.00</p>
           <p>Designed by the lovely people at <a href="https://kcscreenprint.com">KC Screenprint</a>. Show your support for the show, and for the Coen movie that could have been.</p>
-          <p><em>One size fits all. Also available on location while supplies last.</em></p>
+          <p><em>One size fits all. Pick it up at the show for free, or we ship it.</em></p>
           <div class="btns">
-            <a class="btn btn--primary" href="https://tothewhitesea.myshopify.com/cart/57503180882086:1">Add to cart</a>
-            <a class="btn" href="https://tothewhitesea.myshopify.com/products/to-the-white-sea-hat">View in store</a>
+            <a class="btn btn--primary" href="STRIPE_PICKUP_LINK">Buy, pick up at the show</a>
+            <a class="btn" href="STRIPE_SHIP_LINK">Buy, ship it to me</a>
           </div>
         </div>
       </article>
@@ -218,7 +208,7 @@
 <footer>
   <div class="wrap">
     <span>© 2026 To The White Sea</span>
-    <span><a href="https://tothewhitesea.myshopify.com/policies/privacy-policy">Privacy policy</a> · <a href="https://tothewhitesea.myshopify.com/policies/terms-of-service">Terms</a></span>
+    <span>Checkout by Stripe. We keep nothing but your order.</span>
   </div>
 </footer>
 
